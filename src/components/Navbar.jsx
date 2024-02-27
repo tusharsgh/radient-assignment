@@ -32,7 +32,7 @@ function Navbar() {
   const [isOpen, setOpen] = useState(false)
   return (
     <div className="bg-[#212731]  ">
-      <div className=" w-screen  flex items-center justify-center h-18 gap-20 p-4 md:hidden ">
+      <div className=" w-screen  flex items-center justify-center h-18 gap-20 p-4 lg:hidden ">
 <div className="flex bg-[#ffff] w-[15rem] items-center p-1 rounded-[6px]" >
 <CiSearch size={'1.6em'} />
     <input className="flex-1 outline-none border-none"/>
@@ -43,7 +43,7 @@ function Navbar() {
     <div className="font-[300px] text-0.875 text-[#D1D6DA]" >Today's Deal</div>
 
     </div>
-    <div className="h-18 gap-20 p-2  2xl:hidden  md:block">
+    <div className="h-18 gap-20 p-2  2xl:hidden  lg:block">
     <Hamburger toggled={isOpen} toggle={setOpen} color="white" />
     <div className={isOpen? "w-screen h-[50%] bg-[#212731] flex items-center justify-center  " :"bg-[#212731] w-screen "}>
     <Trail open={isOpen}>

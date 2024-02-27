@@ -5,9 +5,10 @@ module.exports = {
   ],
   theme: {
     screens: {
-      '2xl': {'max': '1535px'},
+      '2xl': {'max': '1600px'},
       // => @media (max-width: 1535px) { ... }
-
+     'mmd':{'min':'740px'},
+       
       'xl': {'max': '1279px'},
       // => @media (max-width: 1279px) { ... }
 

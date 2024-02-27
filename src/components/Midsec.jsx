@@ -35,7 +35,7 @@ function Midsec() {
       <button className="text-[#4B5665] text-[13px] bg-[#ffffff]  text-left rounded-[6px] max-w-[7rem] max-h-[2rem] px-4 py-2">Tools </button>
       < button className="text-[#4B5665] text-[13px] bg-[#ffffff]  text-left rounded-[6px] max-w-[7rem] max-h-[2rem] px-4 py-2">AWS Builder </button>
       <button className="text-[#4B5665] text-[13px] bg-[#ffffff]  text-left rounded-[6px] max-w-[7rem] max-h-[2rem] px-4 py-2">Start Build </button>
-      <button className="text-[#4B5665] text-[13px] bg-[#ffffff]  text-left rounded-[6px] max-w-[7rem] h-[2rem] px-4 py-2">Build Supplies </button>
+      <button className="text-[#4B5665] text-[13px] bg-[#ffffff]  text-left rounded-[6px] max-w-[10rem] h-[2rem] px-4 py-2">Build Supplies </button>
       <button className="text-[#4B5665] text-[13px] bg-[#ffffff]  text-left rounded-[6px] max-w-[7rem] h-[2rem] px-4 py-2">Tooling </button>
       <button className="text-[#4B5665] text-[13px] bg-[#ffffff]  text-left rounded-[6px] max-w-[7rem] h-[2rem] px-4 py-2">BlueHosting </button>
       </div>

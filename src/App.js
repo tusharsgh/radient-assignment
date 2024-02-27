@@ -6,32 +6,16 @@ import {Tab} from'./hordata';
 import { useScroll } from "@use-gesture/react";
 import {  animated, useSpring } from '@react-spring/web'
 
-const clamp = (value, clampAt) => {
-  if (value > 0) {
-    return value > clampAt ? clampAt : value;
-  } else {
-    return value < -clampAt ? -clampAt : value;
-  }
-};
+
 
 function App() {
-  const [style, set] = useSpring(() => ({
-    transform: "perspective(500px) rotateY(0deg)"
-  }));
-
-  const bind = useScroll(event => {
-    set({
-      transform: `perspective(500px) rotateY(${
-        event.scrolling ? clamp(event.delta[0]) : 0
-      }deg)`
-    });
-  });
+  
   return (
     <div className="bg-[#FBFCFD] h-[100%] w-screen ">
-    <div className="flex flex-col items-center gap-4 ">
+    <div className="flex flex-col  gap-4 mmd:items-center">
      <Navbar />
     
-      <div className="flex flex-col gap-5 ">
+      <div className="flex flex-col gap-5 md:p-[1rem] ">
     <Midsec/>
   
    <HorTab />
