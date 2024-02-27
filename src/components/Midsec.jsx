@@ -2,7 +2,17 @@ import React from 'react'
 import { RiCheckboxCircleLine } from "react-icons/ri";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
+import Slick from "./Slick";
+import Slider from "react-slick";
 function Midsec() {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
+  
   return (
  
 
@@ -31,7 +41,7 @@ function Midsec() {
       </div>
       <div className="border-b-[2.33px] border-[#E1E4E6] border-opacity-40 w-full"></div>
  
-        <div className="flex gap-5 items-start pt-5 flex-wrap">
+        <div className="flex gap-5 items-start pt-5 flex-wrap md:hidden">
       <button className="text-[#4B5665] text-[13px] bg-[#ffffff]  text-left rounded-[6px] max-w-[7rem] max-h-[2rem] px-4 py-2">Tools </button>
       < button className="text-[#4B5665] text-[13px] bg-[#ffffff]  text-left rounded-[6px] max-w-[7rem] max-h-[2rem] px-4 py-2">AWS Builder </button>
       <button className="text-[#4B5665] text-[13px] bg-[#ffffff]  text-left rounded-[6px] max-w-[7rem] max-h-[2rem] px-4 py-2">Start Build </button>
@@ -39,6 +49,8 @@ function Midsec() {
       <button className="text-[#4B5665] text-[13px] bg-[#ffffff]  text-left rounded-[6px] max-w-[7rem] h-[2rem] px-4 py-2">Tooling </button>
       <button className="text-[#4B5665] text-[13px] bg-[#ffffff]  text-left rounded-[6px] max-w-[7rem] h-[2rem] px-4 py-2">BlueHosting </button>
       </div>
+      <Slick />
+
       <div className="flex gap-5 items-start pt-5 flex-wrap">
       <div className="flex text-[#727D87] text-[13px]">Home</div>
       <div className="flex text-[#727D87] text-[13px]">{'>'}</div>

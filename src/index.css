@@ -11,3 +11,49 @@
         font-family:'Inter',san-sarif;
       }
 }
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  max-width:100%;
+  background-color:#FBFCFD;
+  
+
+}
+.item {
+
+  margin: 10px;
+  background-color: white;
+  border-radius:8px;
+  font-size:14px;
+  color:#4B5665;
+  width: 100vw;
+  white-space: nowrap;
+  max-width: 7rem;
+  max-height: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.container::-webkit-scrollbar {
+  height: 1px;
+  
+
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 1px;
+}
+
+.container::-webkit-scrollbar-track {
+  background-color: rgb(245, 245, 245);
+  border-radius: 10px;
+}
+@media (min-width: 740px){
+  .container{
+    display: none;
+  }
+}

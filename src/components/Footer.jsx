@@ -2,7 +2,7 @@ import React from 'react'
 import { IoIosArrowDown } from "react-icons/io";
 function Footer() {
   return (
-    <div className="bg-[#212731] h-[100%] w-screen flex gap-32 justify-center pt-12 pb-32 flex-wrap " >
+    <div className="bg-[#212731] h-[100%] w-screen flex gap-32 md:gap-10 justify-center pt-12 pb-32 flex-wrap " >
 
       <div className="flex flex-col  gap-3">
       <div className="text-[#FFFFFF] font-[400] text-[16px]">Categories</div>

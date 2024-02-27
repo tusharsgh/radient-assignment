@@ -5,7 +5,7 @@ import {data} from './vertdata';
 import {Tab} from'./hordata';
 import { useScroll } from "@use-gesture/react";
 import {  animated, useSpring } from '@react-spring/web'
-
+import Slick from "../src/components/Slick";
 
 
 function App() {
@@ -51,7 +51,9 @@ function App() {
     </div>
    
     </div>
+ 
   );
+  
 }
 
 export default App;

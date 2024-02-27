@@ -189,7 +189,7 @@ img:{
           </div>
         </div>
 
-<div className=" bg-[#FFFFFF] rounded-[12px]  flex-wrap 2xl:hidden lg:block ">
+<div className=" bg-[#FFFFFF] rounded-[12px]  flex-wrap m2xl:hidden  2xl:hidden lg:block ">
   <div className="flex flex-col justify-center items-center p-7  ">
   <div className="flex items-center justify-center relative  w-[100%] ">
 {item.best_choice?<div className="flex bg-[#FF7724] items-center rounded-r-[7px] p-[4px] px-[6px] gap-1 absolute left-[-5%] top-[-30%]  ">
