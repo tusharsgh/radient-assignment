@@ -43,7 +43,7 @@ function Navbar() {
     <div className="font-[300px] text-0.875 text-[#D1D6DA]" >Today's Deal</div>
 
     </div>
-    <div className="h-18 gap-20 p-2  2xl:hidden  lg:block">
+    <div className="h-18 gap-20 p-2  m2xl:hidden 2xl:hidden  lg:block">
     <Hamburger toggled={isOpen} toggle={setOpen} color="white" />
     <div className={isOpen? "w-screen h-[50%] bg-[#212731] flex items-center justify-center  " :"bg-[#212731] w-screen "}>
     <Trail open={isOpen}>
