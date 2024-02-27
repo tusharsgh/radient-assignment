@@ -15,7 +15,7 @@ function App() {
     <div className="flex flex-col  gap-4 mmd:items-center">
      <Navbar />
     
-      <div className="flex flex-col gap-5 md:p-[1rem] ">
+      <div className="flex flex-col gap-10 md:p-[1rem] ">
     <Midsec/>
   
    <HorTab />

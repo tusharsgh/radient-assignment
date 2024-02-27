@@ -16,7 +16,7 @@ function Midsec() {
   return (
  
 
-      <div className="flex flex-col flex-1 flex-wrap lg:items-center  ">
+      <div className="flex flex-col flex-1 flex-wrap lg:items-center gap-1  ">
       <div className="text-[#2C384A] text-[38px] font-[400px] pt-5 ">
         Best Website builder in the US
       </div>
@@ -51,7 +51,7 @@ function Midsec() {
       </div>
       <Slick />
 
-      <div className="flex gap-5 items-start pt-5 flex-wrap">
+      <div className="flex gap-4 items-start pt-5 flex-wrap">
       <div className="flex text-[#727D87] text-[13px]">Home</div>
       <div className="flex text-[#727D87] text-[13px]">{'>'}</div>
       <div className="flex text-[#727D87] text-[13px]">Hosting for all</div>

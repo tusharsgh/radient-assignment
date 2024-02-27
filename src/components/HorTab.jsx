@@ -20,8 +20,10 @@ const Tab=[{
         text:"[What You Get]: Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides."
     },
     review:{
-    stars:"9.8" ,   
-    rating:"Exceptional"
+    score:"9.8" ,   
+    rating:"Exceptional",
+    stars:5
+
     },
     img:{
         heading:"Builder 1",
@@ -39,8 +41,9 @@ const Tab=[{
         text:"[What You Get]: Gain access to the SiteCraft design studio, featuring a robust selection of design elements, SEO optimization tools, and e-commerce integrations."
     },
     review:{
-        stars:"9.5" ,   
-        rating:"Excellent"
+        score:"9.5" ,   
+        rating:"Excellent",
+        stars:4
         },
         img:{
             heading:"Builder ",
@@ -60,8 +63,10 @@ hightlights:{
     text:"[What You Get]: Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides."
 },
 review:{
-    stars:"9.3" ,   
-    rating:"Exceptional"
+    score:"9.3" ,   
+    rating:"Exceptional",
+    stars:5
+    
     },
     img:{
         heading:"Builder 1 ",
@@ -102,8 +107,9 @@ point_text:[
 "Out of box"
 ],
 review:{
-    stars:"9.1" ,   
-    rating:"Very Good"
+    score:"9.1" ,   
+    rating:"Very Good",
+    stars:4
     },
 img:{
         heading:"CDK ",
@@ -116,7 +122,7 @@ img:{
 ];
 
   return (
-    <div className="flex flex-col flex-1  gap-8" >
+    <div className="flex flex-col flex-1  gap-10" >
       {Tab.map((item)=>{
        return(
         <div key={item.id}>
@@ -152,6 +158,7 @@ img:{
            
                 </div>
                 <div className="text-[#4B5665] text-[13px] font-[400]">{p1.review}</div>
+                
                 </div>
               
              )})}
@@ -177,11 +184,11 @@ img:{
             <div>
                 
             </div>
-            <div className="flex flex-col items-center mr-5">
-          <div className="flex flex-col items-center bg-[#F3F9FF] rounded-b-[6px] mt-[0%] p-5 max-h-[100px]">
-            <div className="text-[#074786] text-[25px] font-[300]">{item.review.stars}</div>
+            <div className="flex flex-col  items-center mr-5">
+          <div className="flex flex-col items-center bg-[#F3F9FF] rounded-b-[6px] gap-1 mt-[0%] p-5 h-fit w-[120px]">
+            <div className="text-[#074786] text-[25px] font-[300]">{item.review.score}</div>
             <div className="text-[#074786] text-[14px]">{item.review.rating}</div>
-            
+            {item.review.stars==5?<img src={require('../img/5stars.png')}/>:<img src={require('../img/4stars.png')}/>}
             
        
           </div>
@@ -192,21 +199,22 @@ img:{
 <div className=" bg-[#FFFFFF] rounded-[12px]  flex-wrap m2xl:hidden  2xl:hidden lg:block ">
   <div className="flex flex-col justify-center items-center p-7  ">
   <div className="flex items-center justify-center relative  w-[100%] ">
-{item.best_choice?<div className="flex bg-[#FF7724] items-center rounded-r-[7px] p-[4px] px-[6px] gap-1 absolute left-[-5%] top-[-30%]  ">
+{item.best_choice?<div className="flex bg-[#FF7724] items-center rounded-r-[7px] p-[4px] px-[6px] gap-1 absolute left-[-5%] top-[-20%]  ">
         {item.id==1 ?<GoTrophy color="#FFFFFF" />:<IoDiamondOutline color="#FFFFFF" />} 
         <div className="text-[rgb(255,255,255)] text-[12px] ">Best Choice</div>
            </div>:<div className="absolute"></div>}
            {<div className="border h-[44px] w-[44px] flex items-center justify-center rounded-[44px] bg-[#ffff]  absolute left-[-8%]  "> 
            <div>{item.id}</div>
            </div>} 
-           <div className="flex flex-col items-center ml-[4.4%]">
+           <div className="flex flex-col items-center pt-[55px]">
            <img src={require('../img/img1.png')} className="h-24 w-36 self-center  "/>
-            <div className="text-[#626E79] text-[13px] mb-5 font-[400] ">{item.img.heading}</div>
+            <div className="text-[#626E79] text-[13px] mb-5 font-[400] z-2 ">{item.img.heading}</div>
            </div>
             
-            <div className="flex flex-col items-center bg-[#F3F9FF] rounded-b-[6px]  right-0  top-[-20%] p-2 max-h-[200px] absolute">
-            <div className="text-[#074786] text-[15px] font-[300]">{item.review.stars}</div>
+            <div className="flex flex-col items-center bg-[#F3F9FF] rounded-b-[6px]  gap-2 right-0  top-[-14.4%] p-3 h-max absolute ">
+            <div className="text-[#074786] text-[15px] font-[300]">{item.review.score}</div>
             <div className="text-[#074786] text-[12px]">{item.review.rating}</div>
+            {item.review.stars==5?<img src={require('../img/5stars.png')}/>:<img src={require('../img/4stars.png')}/>}
             </div>
 </div>
               
