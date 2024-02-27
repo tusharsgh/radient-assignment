@@ -21,7 +21,7 @@ function Midsec() {
         Best Website builder in the US
       </div>
       <div className="border-b-[2.33px] border-[#E1E4E6] border-opacity-40 w-full"></div>
-      <div className="flex gap-3 items-center p-1 flex-1">
+      <div className="flex gap-3 items-center p-1 flex-1 whitespace-no-wrap flex-wrap">
         <div className="flex items-center gap-1">
         <RiCheckboxCircleLine/>
         <div className="text-[#4B5665] text-[13px]">Last Updated</div>
@@ -32,7 +32,7 @@ function Midsec() {
        <IoIosInformationCircleOutline />
        <div className="text-[#4B5665] text-[13px]" >Advertising Disclosure</div>
        </div>
-       <div className="flex items-center gap-1 ml-auto " >
+       <div className="flex items-center gap-1 mmd:ml-auto  " >
         <div className="text-[#4B5665] text-[13px] " > Top Relevant</div>
        <IoIosArrowDown/>
 
