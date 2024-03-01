@@ -5,6 +5,7 @@ import {data} from './vertdata';
 import {Tab} from'./hordata';
 import { useScroll } from "@use-gesture/react";
 import {  animated, useSpring } from '@react-spring/web'
+
 import Slick from "../src/components/Slick";
 
 
@@ -15,7 +16,7 @@ function App() {
     <div className="flex flex-col  gap-4 mmd:items-center">
      <Navbar />
     
-      <div className="flex flex-col gap-10 md:p-[1rem] ">
+      <div className="flex flex-col gap-10 lg:p-[1rem] ">
     <Midsec/>
   
    <HorTab />

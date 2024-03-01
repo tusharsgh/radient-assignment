@@ -18,7 +18,7 @@ const Trail = ({ open, children }) => {
   return (
     <div  className="flex flex-col items-center">
       {trail.map(({ height, ...style }, index) => (
-        <a.div key={index} className="relative    text-white   overflow-hidden" style={style}>
+        <a.div key={index} className="relative   text-white   overflow-hidden" style={style}>
           <a.div style={{ height }}>{items[index]}</a.div>
         </a.div>
       ))}
@@ -45,7 +45,7 @@ function Navbar() {
     </div>
     <div className="h-18 gap-20 p-2  m2xl:hidden 2xl:hidden  lg:block">
     <Hamburger toggled={isOpen} toggle={setOpen} color="white" />
-    <div className={isOpen? "w-screen h-[50%] bg-[#212731] flex items-center justify-center  " :"bg-[#212731] w-screen "}>
+    <div className={isOpen? "w-[100%] h-[50%] bg-[#212731] flex items-center justify-center  " :"bg-[#212731] w-screen "}>
     <Trail open={isOpen}>
     <div className="flex bg-[#ffff]  items-center p-1 rounded-[6px] " >
 <CiSearch  color="black"size={'1.6em'} />
